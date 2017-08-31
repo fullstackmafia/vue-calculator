@@ -1,0 +1,92 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>A JavaScript Calculator</title>
+        <link href="vue-calculator.css" type="text/css" rel="stylesheet">
+        
+        <script src="https://unpkg.com/vue"></script>
+        <script src="vue-calculator.js"></script>       
+    </head>
+
+    <body>
+        <div class="calculator">    
+            <div id="app">
+                <button class="toggle-button" v-on:click="changeMode = !changeMode">
+                  <p v-show="changeMode">Show Advanced Mode &nbsp; &nbsp; &#9864;</p>
+                  <p v-show="!changeMode">Show Basic Mode &nbsp; &nbsp; &#9862;</p>
+
+                </button>
+                <div class="results">
+                  <input class="input" v-model="current">
+                </div>
+                <div class="basic-mode" v-show="changeMode" >
+                    <button class="button" v-on:click="press">7</button>
+                    <button class="button" v-on:click="press">8</button>
+                    <button class="button" v-on:click="press">9</button>
+                    <button class="button" v-on:click="press">*</button>
+                    <button class="button" v-on:click="press">&#60;=</button>
+                    <button class="button" v-on:click="press">C</button>
+                    <button class="button" v-on:click="press">4</button>
+                    <button class="button" v-on:click="press">5</button>
+                    <button class="button" v-on:click="press">6</button>
+                    <button class="button" v-on:click="press">/</button>
+                    <button class="button" v-on:click="press">(</button>
+                    <button class="button" v-on:click="press">)</button>
+                    <button class="button" v-on:click="press">1</button>
+                    <button class="button" v-on:click="press">2</button>
+                    <button class="button" v-on:click="press">3</button>
+                    <button class="button" v-on:click="press">-</button>
+                    <button class="button" v-on:click="press">x ²</button>
+                    <button class="button" v-on:click="press">±</button>
+                    <button class="button" v-on:click="press">0</button>
+                    <button class="button" v-on:click="press">.</button>
+                    <button class="button" v-on:click="press">%</button>
+                    <button class="button" v-on:click="press">+</button>
+                    <button class="button equal-sign" v-on:click="press">=</button>    
+                </div>   
+
+                <div class="complex-mode" v-show="!changeMode">                   
+                    <button class="button"v-on:click="press">sin</button>
+                    <button class="button"v-on:click="press">cos</button>
+                    <button class="button"v-on:click="press">tan</button>
+                    <button class="button"v-on:click="press">x^</button>
+                    <button class="button"v-on:click="press">&#60;=</button>
+                    <button class="button"v-on:click="press">C</button>
+                    <button class="button"v-on:click="press">log</button>
+                    <button class="button"v-on:click="press">ln</button>
+                    <button class="button"v-on:click="press">e</button>
+                    <button class="button"v-on:click="press">∘</button>
+                    <button class="button"v-on:click="press">rad</button>
+                    <button class="button"v-on:click="press">√</button>
+                    <button class="button"v-on:click="press">7</button>
+                    <button class="button"v-on:click="press">8   </button>
+                    <button class="button"v-on:click="press">9</button>
+                    <button class="button"v-on:click="press">/</button>
+                    <button class="button"v-on:click="press">x ²</button>
+                    <button class="button"v-on:click="press">x !</button>
+                    <button class="button"v-on:click="press">4</button>
+                    <button class="button"v-on:click="press">5</button>
+                    <button class="button"v-on:click="press">6</button>
+                    <button class="button"v-on:click="press">*</button>
+                    <button class="button"v-on:click="press">(</button>
+                    <button class="button"v-on:click="press">)</button>
+                    <button class="button"v-on:click="press">1</button>
+                    <button class="button"v-on:click="press">2</button>
+                    <button class="button"v-on:click="press">3</button>
+                    <button class="button"v-on:click="press">-</button>
+                    <button class="button"v-on:click="press">%</button>
+                    <button class="button"v-on:click="press">±</button>
+                    <button class="button"v-on:click="press">0</button>
+                    <button class="button"v-on:click="press">.</button>
+                    <button class="button"v-on:click="press">&#x003C0;</button>
+                    <button class="button"v-on:click="press">+</button>                    
+                    <button class="button equal-sign">=</button>
+                </div> 
+            </div>
+        </div>
+        
+        <script src="https://unpkg.com/vue"></script>
+        <script src="vue-calculator.js"></script>               
+    </body>
+</html>

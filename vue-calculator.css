@@ -1,0 +1,79 @@
+body {
+  background: #085078;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.calculator {
+  width: 450px;
+  padding: 20px;
+  border-radius: 5px;
+  margin: 12% 30%;
+  background-color: hsl(0, 0%, 20%);
+
+
+}
+
+.input {
+  width: 400px;   height: 50px;
+  border-radius: 0px;
+  border: 1px solid hsl(0, 0%, 0%);
+  background-color: #333333;
+  color: #d9d9d9;
+  padding: 0 5px 0 5px;
+  margin: 0 0px 10px 0px;
+  font-size: 30px;
+}
+
+.button {
+  margin: 3px;
+  width: 63px;
+  border: 1px solid hsl(0, 0%, 5%);
+  height: 25px;
+  border-radius: 4px;
+  color: hsl(0, 0%, 85%);
+  background-color: hsl(0, 0%, 10%);
+  cursor: pointer;
+  outline: none;
+}
+
+.basic-mode {
+  width: 415px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.complex-mode {
+  width: 415px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.equal-sign {
+  background-color: hsl(120, 100%, 25%);
+  width: 133px;
+}
+
+.toggle-button {
+  border: none;
+  background-color: hsl(0, 0%, 20%);
+  cursor: pointer;
+  outline: none;
+}
+
+#app {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+button::-moz-focus-inner {
+  border-color: transparent;
+}
+
+
+
+
+
